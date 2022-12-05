@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-def max_integer(my_list=[]):
-    if my_list is None or len(my_list) is 0:
-        return None
-    max = my_list[0]
-    for i in range(len(my_list)):
-        if max < my_list[i]:
-            max = my_list[i]
-    return 
+def multiply_by_2(a_dictionary):
+    new_dir = a_dictionary.copy()
+    list_keys = list(new_dir.keys())
+
+    for i in list_keys:
+        new_dir[i] *= 2
+
+    return (new_dir) 
